@@ -4,7 +4,7 @@
 <body>
 Drag link below to toolbar:<br>
 
-<a href="javascript: var oReq=new XMLHttpRequest();oReq.addEventListener('load',function(){var arr=this.responseText.split('\n');function a(v,c){document.writeln('<span style=\'color:' + c + '\'>' + v + '</span>')}arr.forEach(function(v){if(v.match(/.error/gi)){a(v,'red')}else if(v.match(/([a-zA-Z]+).warning/gi)){a(v,'orange')}else if(v.match(/([a-zA-Z]+).debug/gi)){a(v,'magenta')}else if(v.match(/([a-zA-Z]+).info/gi)){a(v,'blue')}else{document.writeln(v)}})});oReq.open('GET',window.location.href);oReq.send()">ColorLog</a>
+<a href="javascript: var oReq=new XMLHttpRequest();oReq.addEventListener('load',function(){var arr=this.responseText.split('\n');function a(v,c){document.writeln('<span style=\'color:' + c + '\'>' + v + '</span>')}arr.forEach(function(v){if(v.match(/([a-zA-Z]+).error/gi)){a(v,'red')}else if(v.match(/([a-zA-Z]+).warning/gi)){a(v,'orange')}else if(v.match(/([a-zA-Z]+).debug/gi)){a(v,'magenta')}else if(v.match(/([a-zA-Z]+).info/gi)){a(v,'blue')}else{document.writeln(v)}})});oReq.open('GET',window.location.href);oReq.send()">ColorLog</a>
 <br><br>
 <img src="screencast">
 
